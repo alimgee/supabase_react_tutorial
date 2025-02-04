@@ -7,6 +7,19 @@ const VITE_REACT_APP_DATABASE_ANON_KEY = import.meta.env.VITE_REACT_APP_DATABASE
 const supabase = createClient(VITE_REACT_APP_DATABASE_URL, VITE_REACT_APP_DATABASE_ANON_KEY);
 
 
+/**
+ * The App component fetches a list of musical instruments from a Supabase database
+ * and displays them in an unordered list.
+ *
+ * @component
+ * @example
+ * return (
+ *   <App />
+ * )
+ *
+ * @returns {JSX.Element} The rendered component.
+ */
+
 function App() {
   const [instruments, setInstruments] = useState([]);
 
